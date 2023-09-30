@@ -1,0 +1,207 @@
+/* Navbar */
+nav {
+    height: 85px;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    align-self: center;
+}
+
+nav .link-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav .link-group a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}
+
+nav .link-group a:hover {
+    color: var(--secondary-text-color);
+    transition: color .3s;
+}
+
+/* Main */
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 600px;
+    border-radius: 10px;
+    background-color: var(--card-bg);
+}
+
+/* App navbar */
+.app-nav {
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+
+.app-nav ul {
+    width: 550px;
+    padding: 10px;
+    margin: 25px;
+    list-style: none;
+    border-radius: 10px;
+    background-color: var(--card-inner-bg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.app-nav li {
+    width: 100%;
+    height: 100;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.app-nav li i {
+    font-size: 2rem;
+}
+
+.app-nav li p {
+    font-size: 1.25rem;
+}
+
+.app-nav li:hover {
+    background-color: var(--hover);
+}
+
+li.toggle {
+    background-color: var(--primary-color);
+}
+
+li.toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+/* App Display */
+.app-display {
+    width: 550px;
+    height: 400px;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    background-color: var(--card-inner-bg);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+section {
+    background-color: var(--card-inner-bg);
+    width: 550px;
+    padding: 10px;
+    display: block;
+}
+
+section.invsible {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+    display: none;
+}
+
+.button-group {
+    width: 400px;
+    margin: auto;
+    color: var(--primary-text-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.button-group button {
+    padding: 10px;
+    font-size: 1.75rem;
+    text-align: center;
+    color: var(--primary-text-color);
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: var(--hover);
+}
+
+.button-group button:disabled {
+    cursor: not-allowed;
+    background-color: var(--button-bg);
+}
+
+.button-group button:disabled:hover {
+    background-color: var(--button-bg);
+}
+
+.clock-app p {
+    margin-top: 100px;
+    color: var(--primary-text-color);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.clock-app h1 {
+    color: var(--primary-text-color);
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.stopwatch-app h1 {
+    color: var(--primary-text-color);
+    margin-top: 90px;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.timer-app .timer-input {
+    margin: auto;
+    margin-top: 90px;
+    width: 395px;
+    letter-spacing: -25px;
+}
+
+.timer-app input {
+    width: 110px;
+    display: inline;
+    color: var(--primary-text-color);
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background-color: var(--card-inner-bg);
+}
+
+.timer-app p {
+    display: inline;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    letter-spacing: 0px;
+}
+
+.timer-app input:focus {
+    border: none;
+    outline: none;
+}

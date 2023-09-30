@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/svg+xml">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1></h1><a href="#" class="logo"><img src="img/logo.png" width="80" height="80" align="left"></a>
+        <div class="link-group">
+            <a id="change_theme"><i class="ri-sun-fill"></i></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="app-nav">
+                <ul>
+                    <li id="clock_show" class="clock app-show toggle">
+                        <i class="clock ri-time-fill"></i>
+                        <p class="clock">Clock</p>
+                    </li>
+                    <li id="stopwatch_show" class="stopwatch app-show">
+                        <i class="stopwatch ri-timer-fill"></i>
+                        <p class="stopwatch">Stopwatch</p>
+                    </li>
+                    <li id="timer_show" class="timer app-show">
+                        <i class="timer ri-hourglass-fill"></i>
+                        <p class="timer">Timer</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="app-display">
+                <section id="clock" class="clock-app">
+                    <div class="location"></div>
+                    <p id="now_date"></p>
+                    <h1 id="now_time"></h1>
+                </section>
+                <section id="stopwatch" class="stopwatch-app invsible">
+                    <h1 id="stoptime">00:00:00</h1>
+                    <div class="button-group">
+                        <button id="stopwatch_start">Start</button>
+                        <button id="stopwatch_stop">Stop</button>
+                        <button id="stopwatch_reset">Reset</button>
+                    </div>
+                </section>
+                <section id="timer" class="timer-app invsible">
+                    <div class="timer-input">
+                        <input id="timer_hour" type="text" value="00" pattern="\d*" maxlength="2">
+                        <p>:</p>
+                        <input id="timer_minute" type="text" value="05" pattern="\d*" maxlength="2">
+                        <p>:</p>
+                        <input id="timer_second" type="text" value="00" pattern="\d*" maxlength="2">
+                    </div>
+                    <div class="button-group">
+                        <button id="timer_start">Start</button>
+                        <button id="timer_stop">Stop</button>
+                        <button id="timer_reset">Reset</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="js/switchApp.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/stopWatch.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
